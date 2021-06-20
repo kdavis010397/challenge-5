@@ -1,0 +1,151 @@
+//USER AGENT RESET
+@use 'variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.9375em;
+  font-family: "Spartan";
+}
+
+body {
+  background: url("images/bg-pattern-bottom-desktop.svg");
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.page {
+  margin: 0 auto;
+  padding: 3rem 10rem;
+  height: 90vh;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  &__slogan {
+    width: 50%;
+    padding-right: 6rem;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__paragraph {
+    line-height: $line-height;
+  }
+
+  &__ratings {
+    width: 50%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+  }
+
+  &__rating {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    width: 90%;
+    border-radius: $radius;
+    background-color: $neutral-2;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    &--2 {
+      margin-left: 2rem;
+    }
+
+    &--3 {
+      margin-left: 4rem;
+    }
+  }
+
+  &__rating-stars {
+    padding-left: 2rem;
+    padding-right: 3rem;
+  }
+  &__star {
+    padding-right: 0.5rem;
+  }
+
+  &__company-rating {
+    margin-right: 2.5rem;
+  }
+  &__reviews {
+    flex-basis: 100%;
+    margin-top: 3rem;
+
+    color: $neutral-3;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__review {
+    padding: 0 2.5rem;
+    border-radius: $radius;
+    background-color: $magenta;
+    height: max-content;
+    width: 32%;
+
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 0.75rem;
+
+    &--2 {
+      margin-top: 1rem;
+    }
+
+    &--3 {
+      margin-top: 2rem;
+    }
+  }
+
+  &__profile {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__profile-pic {
+    border-radius: 50%;
+    width: 60%;
+  }
+
+  &__profile-buyer {
+    line-height: $line-height;
+  }
+
+  &__verified {
+    color: $neutral-1;
+    font-weight: 400;
+  }
+
+  &__quote {
+    font-size: 0.75rem;
+    line-height: $line-height;
+    padding-bottom: 2rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.9375em;
+  font-family: "Spartan";
+}
+
+body {
+  background: url("images/bg-pattern-bottom-desktop.svg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.page {
+  margin: 0 auto;
+  padding: 3rem 10rem;
+  height: 90vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.page__slogan {
+  width: 50%;
+  padding-right: 6rem;
+}
+.page__heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.page__paragraph {
+  line-height: 1.5rem;
+}
+.page__ratings {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+.page__rating {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1.5rem 0;
+  width: 90%;
+  border-radius: 0.5rem;
+  background-color: #f7f2f7;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.page__rating--2 {
+  margin-left: 2rem;
+}
+.page__rating--3 {
+  margin-left: 4rem;
+}
+.page__rating-stars {
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+.page__star {
+  padding-right: 0.5rem;
+}
+.page__company-rating {
+  margin-right: 2.5rem;
+}
+.page__reviews {
+  flex-basis: 100%;
+  margin-top: 3rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.page__review {
+  padding: 0 2.5rem;
+  border-radius: 0.5rem;
+  background-color: #502050;
+  height: max-content;
+  width: 32%;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 0.75rem;
+}
+.page__review--2 {
+  margin-top: 1rem;
+}
+.page__review--3 {
+  margin-top: 2rem;
+}
+.page__profile {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page__profile-pic {
+  border-radius: 50%;
+  width: 60%;
+}
+.page__profile-buyer {
+  line-height: 1.5rem;
+}
+.page__verified {
+  color: #937b92;
+  font-weight: 400;
+}
+.page__quote {
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
