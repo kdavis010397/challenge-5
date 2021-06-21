@@ -8,40 +8,78 @@ html {
   font-size: 0.9375em;
   font-family: "Spartan";
 }
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 0.675em;
+  }
+}
 
 body {
   background: url("images/bg-pattern-bottom-desktop.svg");
   background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
 }
 
 .page {
-  margin: 0 auto;
+  margin: 3rem auto 0;
   padding: 3rem 10rem;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+@media screen and (max-width: 400px) {
+  .page {
+    height: max-content;
+    margin: 6rem 2rem 6rem;
+    padding: 0;
+    flex-flow: column;
+  }
 }
 .page__slogan {
   width: 50%;
   padding-right: 6rem;
 }
+@media screen and (max-width: 400px) {
+  .page__slogan {
+    padding: 0;
+    width: 100%;
+    flex-flow: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+}
 .page__heading {
+  color: #502050;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 400px) {
+  .page__heading {
+    margin-bottom: 2rem;
+  }
+}
 .page__paragraph {
   line-height: 1.5rem;
+}
+@media screen and (max-width: 400px) {
+  .page__paragraph {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
 }
 .page__ratings {
   width: 50%;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 400px) {
+  .page__ratings {
+    width: 100%;
+    align-items: center;
+  }
 }
 .page__rating {
   font-size: 1rem;
@@ -54,15 +92,37 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 400px) {
+  .page__rating {
+    width: 100%;
+    margin: 0 0 1.5rem;
+    flex-flow: column;
+  }
+}
 .page__rating--2 {
   margin-left: 2rem;
+}
+@media screen and (max-width: 400px) {
+  .page__rating--2 {
+    margin: 0 0 1.5rem;
+  }
 }
 .page__rating--3 {
   margin-left: 4rem;
 }
+@media screen and (max-width: 400px) {
+  .page__rating--3 {
+    margin: 0 0 1.5rem;
+  }
+}
 .page__rating-stars {
   padding-left: 2rem;
   padding-right: 3rem;
+}
+@media screen and (max-width: 400px) {
+  .page__rating-stars {
+    padding: 0;
+  }
 }
 .page__star {
   padding-right: 0.5rem;
@@ -70,12 +130,22 @@ body {
 .page__company-rating {
   margin-right: 2.5rem;
 }
+@media screen and (max-width: 400px) {
+  .page__company-rating {
+    margin: 1rem 0 0;
+  }
+}
 .page__reviews {
   flex-basis: 100%;
   margin-top: 3rem;
   color: white;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 400px) {
+  .page__reviews {
+    flex-flow: column;
+  }
 }
 .page__review {
   padding: 0 2.5rem;
@@ -87,11 +157,27 @@ body {
   flex-flow: row wrap;
   font-size: 0.75rem;
 }
+@media screen and (max-width: 400px) {
+  .page__review {
+    padding: 1.5rem 2.5rem;
+  }
+}
 .page__review--2 {
   margin-top: 1rem;
 }
 .page__review--3 {
   margin-top: 2rem;
+}
+@media screen and (max-width: 400px) {
+  .page__review--3 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .page__review {
+    width: 100%;
+  }
 }
 .page__profile {
   padding: 2rem 0;
@@ -114,6 +200,12 @@ body {
   font-size: 0.75rem;
   line-height: 1.5rem;
   padding-bottom: 2rem;
+}
+@media screen and (max-width: 400px) {
+  .page__quote {
+    font-size: 1rem;
+    line-height: 2;
+  }
 }
 
 .attribution {
